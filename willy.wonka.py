@@ -28,7 +28,7 @@ async def pretty(ctx):
 	await ctx.send('Nope you are not.')
 	
 @bot.command()
-async def wonka(ctx):
+async def wonka?(ctx):
     await ctx.send('Wonka bars are the best chcolate bars in the world. created by willy wonka. did you know willy wonka is very sexy!')
     
 @bot.command()
@@ -38,6 +38,6 @@ async def ping(ctx):
 @bot.event
 async def on_ready():
     await bot.change_presence(activity=discord.Streaming(name="-ping shows latency", url="http://www.twitch.tv/accountname"))
-    print('Willy wonka is')
+    print('Willy wonka')
 
-bot.run('your token here')
+bot.run('token')
